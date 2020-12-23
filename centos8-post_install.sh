@@ -61,7 +61,7 @@ cat /etc/resolv.conf
 
 cp -f /etc/rsyslog.conf /etc/rsyslog.orig-smu
 cat << EOF >> /etc/rsyslog.conf
-*.*       @10.20.55.44:514
+*.*       @syslog.lab_IP:514
 EOF
 service rsyslog restart
 
